@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "1031274496548",
+    "project_id": "contrack-33ae6",
+    "storage_bucket": "contrack-33ae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031274496548:android:58ae4d094be0782db90eb1",
+        "android_client_info": {
+          "package_name": "com.nil_projects.society_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031274496548-78bobk9fdnppu1boqadui42bt5hc8j46.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nil_projects.society_app",
+            "certificate_hash": "be41acb235b2db0bf10b087e9e869e8b44f673ff"
+          }
+        },
+        {
+          "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUZFnxelq9PMhYL-wZZuhfxBM_dY_vuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031274496548:android:432f2e7a1e7e3935b90eb1",
+        "android_client_info": {
+          "package_name": "com.profession.contrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031274496548-s044nj3sc065n5tjtuk2lv4qlbbl74p5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.profession.contrack",
+            "certificate_hash": "be41acb235b2db0bf10b087e9e869e8b44f673ff"
+          }
+        },
+        {
+          "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUZFnxelq9PMhYL-wZZuhfxBM_dY_vuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031274496548:android:9d6afd12eb512f1eb90eb1",
+        "android_client_info": {
+          "package_name": "com.profession.contrack1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031274496548-2uj057ld8isdnbjp1nf1hdh10u72f5sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.profession.contrack1",
+            "certificate_hash": "be41acb235b2db0bf10b087e9e869e8b44f673ff"
+          }
+        },
+        {
+          "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUZFnxelq9PMhYL-wZZuhfxBM_dY_vuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031274496548-lim81cvtgbi96n79f1h9bo45enm5hu6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
