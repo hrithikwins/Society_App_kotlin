@@ -61,8 +61,8 @@ class Maintainance_Records : Fragment() {
         checkSpinner()
 
         val Spinoptions = arrayOf("None","Paid","Not Paid")
-
-        spin_paidornotpaid.adapter = ArrayAdapter<String>(activity,android.R.layout.simple_list_item_1,Spinoptions) as SpinnerAdapter?
+//BUG:Type mismatch: inferred type is FragmentActivity? but Context was expected
+        spin_paidornotpaid.adapter = ArrayAdapter<String>(context!!,android.R.layout.simple_list_item_1,Spinoptions) as SpinnerAdapter?
         spin_paidornotpaid.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Toast.makeText(activity,"Please Select",Toast.LENGTH_LONG).show()
@@ -96,7 +96,9 @@ class Maintainance_Records : Fragment() {
 
     private fun datePicker() {
         val now = Calendar.getInstance()
-        datePickerdialog = DatePickerDialog(activity, DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+//        datePickerdialog = DatePickerDialog(activity, DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+        //  BUG:  Type mismatch: inferred type is FragmentActivity? but Context was expected
+            datePickerdialog = DatePickerDialog(context!!, DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
             val selectedDate = Calendar.getInstance()
             selectedDate.set(Calendar.YEAR,year)
             selectedDate.set(Calendar.MONTH,month)

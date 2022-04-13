@@ -2,15 +2,13 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url 'https://maven.fabric.io/public' }
+        // maven { url 'https://maven.fabric.io/public' }
     }
     dependencies {
-
-
-        classpath 'io.fabric.tools:gradle:1.+'
+        // classpath 'io.fabric.tools:gradle:1.+'
     }
 }
-buildscript
+
 
 
 apply plugin: 'com.android.application'
@@ -21,11 +19,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 
-apply plugin: 'io.fabric'
+// apply plugin: 'io.fabric'
 
-repositories {
-    maven { url 'https://maven.fabric.io/public' }
-}
+// repositories {
+//     maven { url 'https://maven.fabric.io/public' }
+// }
 
 buildscript {
     repositories {
@@ -39,7 +37,7 @@ buildscript {
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 repositories {
-    maven { url 'https://maven.google.com' }
+    // maven { url 'https://maven.google.com' }
 }
 
 android {

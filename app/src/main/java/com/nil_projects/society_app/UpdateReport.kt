@@ -259,8 +259,9 @@ class UpdateReport : AppCompatActivity() {
         val scaleMatrix = Matrix()
         scaleMatrix.setScale(ratioX, ratioY, middleX, middleY)
 
-        val canvas = Canvas(scaledBitmap)
-        canvas.matrix = scaleMatrix
+        val canvas = Canvas(scaledBitmap!!)
+        canvas.setMatrix(scaleMatrix)
+//        canvas.matrix = scaleMatrix
         canvas.drawBitmap(bmp, middleX - bmp.width / 2,
                 middleY - bmp.height / 2, Paint(
                 Paint.FILTER_BITMAP_FLAG))

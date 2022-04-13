@@ -57,10 +57,10 @@ class FUllScreenImage : AppCompatActivity() {
 
         bundle?.let {
             val msg = bundle.getString("msg")
-              id = bundle.getString("id")
-            collectionName = bundle.getString("collectionName")
-            userid = bundle.getString("userid")
-            if(msg.isNotEmpty() && id.isNotEmpty() && userid.isNotEmpty())
+              id = bundle.getString("id").toString()
+            collectionName = bundle.getString("collectionName").toString()
+            userid = bundle.getString("userid").toString()
+            if(msg!!.isNotEmpty() && id.isNotEmpty() && userid.isNotEmpty())
             {
                 tvMsg.text = msg
                 tvPostedBy.text = " Posted By : "+userid
@@ -71,7 +71,7 @@ class FUllScreenImage : AppCompatActivity() {
         var img = intent
         if(img != null)
         {
-            imgUri = img.data
+            imgUri = Uri.parse(img.data.toString())
             if(imgUri != null && fullscreenimg != null)
             {
                 Glide.with(this).load(imgUri).into(fullscreenimg)

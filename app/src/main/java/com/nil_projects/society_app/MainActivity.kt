@@ -42,7 +42,7 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isGone
 import com.codemybrainsout.ratingdialog.RatingDialog
-import com.crashlytics.android.Crashlytics
+//import com.crashlytics.android.Crashlytics
 import com.getbase.floatingactionbutton.FloatingActionsMenu
 import com.github.florent37.runtimepermission.kotlin.askPermission
 import com.google.android.material.snackbar.BaseTransientBottomBar
@@ -50,7 +50,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.onesignal.OneSignal
 import com.tapadoo.alerter.Alerter
 import de.hdodenhof.circleimageview.CircleImageView
-import io.fabric.sdk.android.Fabric
+//import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.app_bar_main.*
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Fabric.with(this,  Crashlytics());
+//        Fabric.with(this,  Crashlytics());
         setContentView(R.layout.activity_main)
         tvNavTitle = findViewById<TextView>(R.id.tvnavTitle)
    //     btn_logout = findViewById<Button>(R.id.btn_logout)
@@ -85,10 +85,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
 
         // OneSignal Initialization
-        OneSignal.startInit(this)
-                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-                .unsubscribeWhenNotificationsAreDisabled(true)
-                .init()
+//        OneSignal.startInit(this)
+//                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+//                .unsubscribeWhenNotificationsAreDisabled(true)
+//                .init()
 
         Timer().scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         if (user != null) {
-            OneSignal.setSubscription(true)
+//            OneSignal.setSubscription(true)
             LoggedIn_User_Email =user!!.getEmail()
         }else{
             startActivity(Intent(this, LoginActivity::class.java))
@@ -316,7 +316,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         .setText("Successfully Loged Out!! :)")
                         .setBackgroundColorRes(R.color.colorAccent)
                         .show()
-                OneSignal.setSubscription(false)
+//                OneSignal.setSubscription(false)
                 startActivity(Intent(this, LoginActivity::class.java))
             }
         }

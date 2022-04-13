@@ -48,7 +48,7 @@ class User_Profile : AppCompatActivity() {
         val flatNo = bundle!!.getString("flatnoExtra")
         val wingName = bundle!!.getString("wingnameExtra")
         val role = bundle!!.getString("roleExtra")
-        number = bundle!!.getString("numberExtra")
+        number = bundle!!.getString("numberExtra").toString()
 
         //Picasso.get().load(profImg).into(profPic)
         Glide.with(this).load(profImg).into(profPic)

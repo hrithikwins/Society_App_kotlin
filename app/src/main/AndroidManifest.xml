@@ -88,10 +88,6 @@
         <activity android:name=".MainActivity">
         </activity>
 
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="Your Fabric Key" />
-
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

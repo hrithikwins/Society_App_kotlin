@@ -64,7 +64,7 @@ class Workers_List : AppCompatActivity() {
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val bundle : Bundle? = intent.extras
-        typeWorker = bundle!!.getString("workerType")
+        typeWorker = bundle!!.getString("workerType").toString()
 
         workerslist_recyclerview = findViewById<RecyclerView>(R.id.workers_list_recyclerview)
 
